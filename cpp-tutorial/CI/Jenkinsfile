@@ -1,5 +1,4 @@
 node {
-    stages {
        stage ('Clone') {
            steps {
               sh 'Put clone command here'
@@ -11,5 +10,4 @@ node {
               sh 'Put Build command here'
            }
        }
-    }
 }
