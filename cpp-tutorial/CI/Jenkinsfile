@@ -4,7 +4,7 @@ node {
      }
 
      stage ('Build') {
-           ls ${WORKSPACE}
+           sh 'ls ${WORKSPACE}'
            echo 'Put Build command here'
      }
 }
