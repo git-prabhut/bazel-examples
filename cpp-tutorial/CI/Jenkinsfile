@@ -1,13 +1,4 @@
 node {
-       stage ('Clone') {
-           step {
-		git branch: 'main', credentialsId: 'git-prabhut', url: 'https://github.com/git-prabhut/bazel-examples'
-           }
-       }
-
-       stage ('Build') {
-           step {
-              echo 'Put Build command here'
-           }
-       }
+     git branch: 'main', credentialsId: 'git-prabhut', url: 'https://github.com/git-prabhut/bazel-examples'
+     echo 'Put Build command here'
 }
