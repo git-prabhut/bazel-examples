@@ -1,13 +1,13 @@
 node {
        stage ('Clone') {
            step {
-              sh 'Put clone command here'
+              echo 'Put clone command here'
            }
        }
 
        stage ('Build') {
            step {
-              sh 'Put Build command here'
+              echo 'Put Build command here'
            }
        }
 }
