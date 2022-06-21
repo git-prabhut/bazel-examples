@@ -1,7 +1,7 @@
 node {
        stage ('Clone') {
            step {
-              echo 'Put clone command here'
+		git branch: 'main', credentialsId: 'git-prabhut', url: 'https://github.com/git-prabhut/bazel-examples'
            }
        }
 
