@@ -9,6 +9,7 @@ node {
      echo 'From Bazel Build stage'
      sh '''
         ls
+        cd cpp-tutorial/stage2
         bazel build //main:hello-world
      '''
   }
