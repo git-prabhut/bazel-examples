@@ -2,6 +2,7 @@ node {
 
   stage('Check-out') {
      echo 'From check-out stage'
+     git branch: 'main', credentialsId: 'git-prabhut', url: 'https://github.com/git-prabhut/bazel-examples'
   }
 
   stage('Bazel Build') {
