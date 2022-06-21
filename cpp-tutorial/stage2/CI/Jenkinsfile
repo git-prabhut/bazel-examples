@@ -1,0 +1,11 @@
+node {
+
+  stage('Check-out') {
+     echo 'From check-out stage'
+  }
+
+  stage('Bazel Build') {
+     echo 'From Bazel Build stage'
+  }
+
+}
