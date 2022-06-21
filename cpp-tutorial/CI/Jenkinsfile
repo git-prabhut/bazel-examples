@@ -5,6 +5,9 @@ node {
 
      stage ('Build') {
            sh 'ls "${WORKSPACE}"'
-           echo 'Put Build command here'
+           sh '''
+               cd "${WORKSPACE}/cpp-tutorial/stage1/main/"
+               bazel build //main:hello-world 
+           '''
      }
 }
