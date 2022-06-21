@@ -1,0 +1,17 @@
+pipeline {
+    agent: any
+
+    stages {
+       stage ('Clone') {
+           steps {
+              sh 'Put clone command here'
+           }
+       }
+
+       stage ('Build') {
+           steps {
+              sh 'Put Build command here'
+           }
+       }
+    }
+}
