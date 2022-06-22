@@ -10,4 +10,18 @@ node {
                bazel build //main:hello-world 
            '''
      }
+
+     post {
+         always {
+           echo "From always"
+	 }
+
+	success {
+	   echo "From success"
+	}
+
+	failure {
+	   echo "From Failure"
+	}
+     }
 }
