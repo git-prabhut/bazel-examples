@@ -1,0 +1,11 @@
+pipeline {
+     agent any
+
+     stage ('Clone') {
+	echo 'From Clone'
+     }
+
+     stage ('Build') {
+	echo 'From Build'
+     }
+}
