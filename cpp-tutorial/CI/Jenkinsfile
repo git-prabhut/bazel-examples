@@ -7,21 +7,7 @@ node {
            sh 'ls "${WORKSPACE}"'
            sh '''
                cd "${WORKSPACE}/cpp-tutorial/stage1/main/"
-               bazel build //main:hello-world 
+	       bazel build //main:hello-world
            '''
-     }
-
-     post {
-         always {
-           echo "From always"
-	 }
-
-	success {
-	   echo "From success"
-	}
-
-	failure {
-	   echo "From Failure"
-	}
      }
 }
